@@ -1,0 +1,12 @@
+/* stylelint-disable at-rule-no-unknown */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global form control reset: avoid @layer base to prevent PostCSS/Tailwind ordering issues */
+input,
+textarea,
+select,
+button {
+  @apply outline-none focus:outline-none;
+}
